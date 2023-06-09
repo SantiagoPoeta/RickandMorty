@@ -1,0 +1,11 @@
+.input{
+border-radius: 5px 0px 0px 5px;
+border-color: yellow;
+height: 2em;
+}
+
+.onClick{
+    border-radius: 0px 5px 5px 0px;
+border-color: yellow;
+height: 2em;
+}
