@@ -5,8 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image:"C:\Users\poeta\OneDrive\Escritorio\rick y morty fondo.jpg" ;
-  background-color: black;
+  background: linear-gradient(to left, rgb(2,7,18) 0%,rgb(44,46,49)100%);
 }
 
 code {

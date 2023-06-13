@@ -1,11 +1,20 @@
 .input{
-border-radius: 5px 0px 0px 5px;
+    height: 2em;
+border-radius: 7px 0px 0px 7px;
 border-color: yellow;
-height: 2em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+border: 1px solid yellow;
 }
 
 .onClick{
-    border-radius: 0px 5px 5px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 2em;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid yellow;
 border-color: yellow;
 height: 2em;
+background-color: rgb(204, 34, 181);
+}
+.onClick:hover{
+    background-color: green;
 }

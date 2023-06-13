@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import style from "./Card.module.css";
 
+
 export default function Card(props) {
-   const {character,onClose} = props;
+  const navigate = useNavigate();
+  const {character,onClose} = props;
+  
+  function navigateHandler(){
+    navigate(`/detail/${character.id}`)
+  }
 
    return (
       <div className={style.cardContainer}>
@@ -10,6 +17,7 @@ export default function Card(props) {
           className={style.characterImage}
           src={character.image}
           alt={character.name}
+          onClick={navigateHandler}
         />
         <h2 className={style.name}>{character.name}</h2>
         <button className={style.closeButton} onClick={()=>{onClose(character.id)}}>
@@ -18,7 +26,7 @@ export default function Card(props) {
       </div>
 
       <div className={style.atributes}>
-        <h2>Species:{character.species}</h2>
+        <h2>Species={character.species}</h2>
         <h2>Gender:{character.gender}</h2>
       </div>
     </div>

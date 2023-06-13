@@ -1,0 +1,44 @@
+.navContainer{
+    margin: 2em;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgb(229, 255, 0);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.about{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(204, 34, 181);
+    margin: 1em;
+    color: yellow;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+}
+.about:hover{
+    background-color: green;
+}
+.home{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(204, 34, 181);
+    margin: 1em;
+    color: yellow;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+}
+.home:hover{
+    background-color: green;
+}
+.random{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(204, 34, 181);
+    margin-left: 1em;
+    color: yellow;
+    border-radius: 10px;
+    border: 1px solid yellow;
+}
+.random:hover{
+    background-color: green;
+}
