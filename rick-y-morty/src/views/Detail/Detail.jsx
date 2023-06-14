@@ -2,6 +2,7 @@
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import './Detail.css';
 
 function Detail () {
     const {id}=useParams();
@@ -40,7 +41,7 @@ function Detail () {
                 <p>{character.origin?.name}</p>
             </div>
             <div>
-                <h3>Location:</h3>
+                <h3>Location: </h3>
                 <p>{character.location?.name}</p>
             </div>
         </div>

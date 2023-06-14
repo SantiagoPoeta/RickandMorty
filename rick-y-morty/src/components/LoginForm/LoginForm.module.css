@@ -1,0 +1,48 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    left: 30em;
+    border: solid 1px;
+    border-radius: 15px;
+    border-color: yellow;
+    padding: 30px;
+    margin: 2em;
+    height: fit-content;
+    width: 25%;
+    color: yellow
+}
+.formTitle{
+    color: yellow;
+    text-shadow: 3px 3px 5px rgb(226, 18, 181) ;
+}
+.credentials{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.credentials label{
+    color: yellow;
+    text-shadow: 3px 3px 5px rgb(226, 18, 181) ;
+}
+.credentials input{
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.credentials input:hover{
+    border: solid 1px yellow;
+}
+.submitBtn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(204, 34, 181);
+    color: yellow;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+}
+.submitBtn:hover{
+   background-color: green;
+}

@@ -1,0 +1,25 @@
+.detail-container{
+    display: flex;
+    justify-content: space-around;
+    border:solid 1px yellow;
+    border-radius: 10px;
+    margin: 2em;
+    padding: 15px;
+}
+.img-container{
+    background: linear-gradient(rgb(231, 7, 201),blue,yellow);
+    padding: 20px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: yellow;
+}
+.details div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
