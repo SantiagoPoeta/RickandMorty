@@ -1,7 +1,8 @@
 const {getChardById} = require("../controllers/getCharById");
 const {postFav,deleteFav} = require("../controllers/handleFavorites");
 const {login} = require("../controllers/login");
-const router = require(express);
+const {Router} = require(express);
+const router = Router();
 
 router.get("/character/:id" , (req,res)=>{
     getChardById(req,res);
