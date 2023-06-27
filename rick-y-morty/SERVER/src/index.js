@@ -1,7 +1,7 @@
 const express = require('express');
 const server = express();
 const PORT = 3001;
-const Router = require("../src/routes/index")
+const {router} = require("../src/routes/index")
 
 server.use(express.json());
 
@@ -19,7 +19,7 @@ server.use((req, res, next) => {
     next();
 });
  
-server.use("/rickandmorty",Router);
+server.use("/rickandmorty",router);
  
 
 server.listen(PORT, () => {

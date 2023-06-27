@@ -14,19 +14,22 @@ import LandingPage from './views/LandingPage/LandingPage';
 function App() {
 
    const [characters,setCharacters] = useState([]);
-   const [access,setAccess] = useState(false)
+   const [access,setAccess] = useState(false);
    
    const navigate = useNavigate();
    const location = useLocation();
-   
-   const EMAIL="santi@gmail.com";
-   const PASSWORD="rick123";
 
-   function login(userData){
-      if(userData.password === PASSWORD && userData.email === EMAIL){
-         setAccess(true)
-         navigate("/home");
-      } 
+   async function login(userData){
+      try {
+         const {email,password} = userData;
+         const URL = "http://localhost:3001/rickandmorty/login/";
+         const {data} = await axios(URL + `?email=${email}&password=${password}`)
+         const {access} = data;
+         setAccess(data);
+         access && navigate("/home");
+      } catch (error) {
+         console.log(error)
+      }
    }
    function logOut(){
       setAccess(false)

@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 function Card(props) {
   const navigate = useNavigate();
-  const {character,onClose,addFav,removeFav,myFavorites} = props;
+  const {character,onClose,addFav,removeFav,myFavorites,showCloseButton=true} = props;
   const [Fav,setFav]= useState(false);
   const{image,name,species,gender,id} = character;
   const favoritos = useSelector(state => state.myFavorites)
@@ -24,6 +24,7 @@ function Card(props) {
     if(!Fav){
       addFav(character)
       setFav(true)
+      showCloseButton = false
     } else{
       removeFav(character)
       setFav(false)
@@ -50,9 +51,9 @@ function Card(props) {
                  ) : (
               <button onClick={ ()=> handleFavorite(character)}>🤍</button>
                   )}
-        <button className={style.closeButton} onClick={()=>{onClose(character.id)}}>
+        {showCloseButton && (<button className={style.closeButton} onClick={()=>{onClose(character.id)}}>
           X
-        </button>
+        </button>)}
       </div>
 
       <div className={style.atributes}>

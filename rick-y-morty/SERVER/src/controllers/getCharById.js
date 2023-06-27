@@ -27,4 +27,4 @@ const getChardById = async function(req,res){
 
 
 
-module.exports = getChardById;
+module.exports = {getChardById};
