@@ -1,5 +1,5 @@
 
-import Card from "../../components/Cards/Cards";
+import Cards from "../../components/Cards/Cards";
 import {useSelector,useDispatch} from "react-redux";
 import { orderFavs,filterFavs,resetFavs } from "../../components/Redux/actions";
 
@@ -33,7 +33,7 @@ export default function Favorites(myFavorites){
                 ))}    
             </select>
             <button onClick={handleReset}>Reset Filters</button>
-            <Card characters = {favorites} />
+            <Cards characters = {favorites} />
         </div>
     )
 }

@@ -24,7 +24,6 @@ function Card(props) {
     if(!Fav){
       addFav(character)
       setFav(true)
-      showCloseButton = false
     } else{
       removeFav(character)
       setFav(false)

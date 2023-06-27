@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { response } = require('express');
+
 const URL = "https://rickandmortyapi.com/api/character/"
 
 const getChardById = async function(req,res){
@@ -14,7 +14,7 @@ const getChardById = async function(req,res){
                     image : data.image,
                     gender : data.gender,
                 }
-            character.name
+            data.name
             ? res.status(200).json(character)
             : res.status(404).send("Not Found");
             

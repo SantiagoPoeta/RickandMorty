@@ -39,15 +39,19 @@ function App() {
       !access && navigate('/')
    },[access]);
 
-   function searchHandler(id){
-         axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
+   async function searchHandler(id){
+      try {
+        const response = await axios(`https://rickandmortyapi.com/api/character/${id}`)
+        const data = response.data;
             if (data.name) {
                setCharacters((oldChars) => [...oldChars, data]);
             } else {
                window.alert('¡No hay personajes con este ID!');
             }
-         });
       
+      } catch (error) {
+         console.log(error)
+      } 
     }
 
    function closeHandler(id){
