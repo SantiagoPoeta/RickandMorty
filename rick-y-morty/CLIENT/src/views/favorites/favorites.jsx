@@ -4,6 +4,7 @@ import {useSelector,useDispatch} from "react-redux";
 import { orderFavs,filterFavs,resetFavs } from "../../components/Redux/actions";
 
 
+
 export default function Favorites({myFavorites}){
     const dispatch = useDispatch();
     const favorites = useSelector((state)=> state.myFavorites);

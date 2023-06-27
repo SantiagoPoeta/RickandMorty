@@ -3,7 +3,7 @@ let myFavorites = [];
 const postFav = function (req,res){
     const character = req.body
     myFavorites.push(character);
-    return res.json(myFavorites);
+    return res.status(200).json(myFavorites);
 }
 
 const deleteFav = function(req,res){
