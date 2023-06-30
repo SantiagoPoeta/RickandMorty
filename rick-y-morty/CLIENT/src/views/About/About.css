@@ -1,0 +1,29 @@
+.Container{
+    display: flex;
+    justify-content: space-between;
+    border:solid 1px yellow;
+    border-radius: 10px;
+    margin: auto;
+    padding: 30px;
+    width: 90%;
+} 
+.img-Container{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1em;
+}
+.Foto{
+    width: 300px;
+    height: auto;
+    border:solid 1px yellow;
+    border-radius: 10px;
+}
+.text-Container{
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}

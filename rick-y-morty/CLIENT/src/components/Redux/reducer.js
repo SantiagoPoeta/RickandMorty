@@ -11,7 +11,7 @@ export default function rootReducer(state=initialState,action){
             return{
                 ...state,
                 myFavorites: action.payload,
-                allCharacters :action.payload,
+                allCharacters:action.payload,
             }
 
         case REMOVE_FAV :
